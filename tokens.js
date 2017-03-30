@@ -76,6 +76,41 @@ String.prototype.tokens = function (prefix, suffix) {
         tokens.forEach(function(t) { t.lastIndex = i;}); // Cada vez que avanza i, fija todos los lastIndex de los regex a la posición de i
         from = i;
 
+        // Ignora los comentarios y los espacios en blanco, si alguno hace match
+        // justo al principio no se se recoje el token y se avanza la cadena.
+        if (m = WHITES.bexec(this) ||
+           (m = ONELINECOMMENT.bexec(this))  ||
+           (m = MULTIPLELINECOMMENT.bexec(this))) {
+               getTok();
+        }
+        // Si hay match con un ID, crea el objeto token de tipo name
+        else if (m = ID.bexec(this)) {
+            result.push(make('name', getTok()));
+        }
+        // Si hay match con un número, crea el objeto token de tipo número
+        else if (m = NUM.bexec(this)) {
+            n = +getTok(); // Conviertelo en un número
+
+            if (isFinite(n)) {
+                result.push(make('number', n));
+            } else {
+                make('number', m[0]).error("Bad number"); // Error si el númnero es infinito
+            }
+        }
+        // Si hay match con un string, crea el objeto token de tipo string quitando
+        // las comillas de los lados.
+        else if (m = STRING.bexec(this)) {
+            result.push(make('string', getTok().replace(/^["']|["']$/g,'')));
+        }
+        // Si hay match con un número, crea el objeto token de tipo operador (Dos caracteres)
+        else if (m = TWOCHAROPERATORS.bexec(this)) {
+            result.push(make('operator', getTok()));}
+            // Si hay match con un número, crea el objeto token de tipo operador (Un caracter)
+        } else if (m = ONECHAROPERATORS.bexec(this)){
+            result.push(make('operator', getTok()));
+        } else {
+          throw "Syntax error near '"+this.substr(i)+"'";
+        }
     }
     return result;
 };
