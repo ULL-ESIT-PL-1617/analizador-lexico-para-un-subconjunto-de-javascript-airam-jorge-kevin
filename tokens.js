@@ -24,15 +24,15 @@
 
 String.prototype.tokens = function (prefix, suffix) {
     'use strict';
-    var c;                      // The current character.
-    var from;                   // The index of the start of the token.
-    var i = 0;                  // The index of the current character.
-    var length = this.length;
-    var n;                      // The number value.
-    var q;                      // The quote character.
-    var str;                    // The string value.
+    let c;                      // The current character.
+    let from;                   // The index of the start of the token.
+    let i = 0;                  // The index of the current character.
+    let length = this.length;
+    let n;                      // The number value.
+    let q;                      // The quote character.
+    let str;                    // The string value.
 
-    var result = [];            // An array to hold the results.
+    let result = [];            // An array to hold the results.
 
     const WHITES              = /\s+/g;
     const ID                  = /[a-zA-Z_]\w*/g;
@@ -45,10 +45,8 @@ String.prototype.tokens = function (prefix, suffix) {
     const tokens = [WHITES, ID, NUM, STRING, ONELINECOMMENT,
                   MULTIPLELINECOMMENT, TWOCHAROPERATORS, ONECHAROPERATORS ];
 
-    var make = function (type, value) {
-
-// Make a token object.
-
+    // Make a token object.
+    let make = function (type, value) {
         return {
             type: type,
             value: value,
