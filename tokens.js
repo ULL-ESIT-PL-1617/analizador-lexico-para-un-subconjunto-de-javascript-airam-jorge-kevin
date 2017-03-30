@@ -1,3 +1,4 @@
+"user strict"
 // tokens.js
 // 2016-01-13
 
@@ -23,15 +24,10 @@
 /*jslint this */
 
 String.prototype.tokens = function (prefix, suffix) {
-    'use strict';
-    let c;                      // The current character.
     let from;                   // The index of the start of the token.
     let i = 0;                  // The index of the current character.
-    let length = this.length;
     let n;                      // The number value.
-    let q;                      // The quote character.
-    let str;                    // The string value.
-
+    let m;                      // Contiene el match encontrado.
     let result = [];            // An array to hold the results.
 
     const WHITES              = /\s+/g;
@@ -53,6 +49,14 @@ String.prototype.tokens = function (prefix, suffix) {
             from: from,
             to: i
         };
+    };
+
+    // Devuelve el token y avanza la cadena actual
+    // la distancia que mida el token.
+    let getTok = function() {
+      let str = m[0];
+      i += str.length; // Warning! side effect on i
+      return str;
     };
 
     // Begin tokenization. If the source string is empty, return nothing.
