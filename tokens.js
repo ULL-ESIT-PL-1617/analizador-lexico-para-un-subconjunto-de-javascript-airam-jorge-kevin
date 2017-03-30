@@ -104,9 +104,9 @@ String.prototype.tokens = function (prefix, suffix) {
         }
         // Si hay match con un número, crea el objeto token de tipo operador (Dos caracteres)
         else if (m = TWOCHAROPERATORS.bexec(this)) {
-            result.push(make('operator', getTok()));}
+            result.push(make('operator', getTok()));
             // Si hay match con un número, crea el objeto token de tipo operador (Un caracter)
-        } else if (m = ONECHAROPERATORS.bexec(this)){
+        } else if (m = ONECHAROPERATORS.bexec(this)) {
             result.push(make('operator', getTok()));
         } else {
           throw "Syntax error near '"+this.substr(i)+"'";
