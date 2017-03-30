@@ -24,7 +24,7 @@
 /*jslint this */
 
 // Equivalente a regex.exec, sin embargo, solo va a devolver el match
-// si ocurrió justo al principio.
+// swwwi ocurrió justo al principio.
 RegExp.prototype.bexec = function(str) {
     var i = this.lastIndex;
     var m = this.exec(str);
