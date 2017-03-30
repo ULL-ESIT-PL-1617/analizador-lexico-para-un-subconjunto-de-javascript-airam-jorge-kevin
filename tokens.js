@@ -34,6 +34,17 @@ String.prototype.tokens = function (prefix, suffix) {
 
     var result = [];            // An array to hold the results.
 
+    const WHITES              = /\s+/g;
+    const ID                  = /[a-zA-Z_]\w*/g;
+    const NUM                 = /\b[+-]?\s*(\d+\.?\d*|\d*\.\d+)([Ee][+-]?\d+)?\b/g;
+    const STRING              = /"[^"\\]*(\\.[^"\\]*)*"|'[^'\\]*(\\.[^'\\]*)*'/g;
+    const ONELINECOMMENT      = /\/\/.*/g;
+    const MULTIPLELINECOMMENT = /\/[*](.|\n)*?[*]\//g;
+    const TWOCHAROPERATORS    = /(===|!==|[+][+=]|-[-=]|=[=<>]|[<>][=<>]|&&|[|][|])/g;
+    const ONECHAROPERATORS    = /([-+*\/=()&|;:,<>{}[\][?][!][%]])/g;
+    const tokens = [WHITES, ID, NUM, STRING, ONELINECOMMENT,
+                  MULTIPLELINECOMMENT, TWOCHAROPERATORS, ONECHAROPERATORS ];
+
     var make = function (type, value) {
 
 // Make a token object.
@@ -269,4 +280,3 @@ String.prototype.tokens = function (prefix, suffix) {
     }
     return result;
 };
-
