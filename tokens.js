@@ -1,4 +1,4 @@
-"user strict"
+"user strict";
 // tokens.js
 // 2016-01-13
 
@@ -31,7 +31,7 @@ RegExp.prototype.bexec = function(str) {
     return (m && m.index == i) ? m : null;
 }
 
-String.prototype.tokens = function (prefix, suffix) {
+String.prototype.tokens = function () {
     let from;                   // The index of the start of the token.
     let i = 0;                  // The index of the current character.
     let n;                      // The number value.
@@ -45,7 +45,7 @@ String.prototype.tokens = function (prefix, suffix) {
     const ONELINECOMMENT      = /\/\/.*/g;
     const MULTIPLELINECOMMENT = /\/[*](.|\n)*?[*]\//g;
     const TWOCHAROPERATORS    = /(===|!==|[+][+=]|-[-=]|=[=<>]|[<>][=<>]|&&|[|][|])/g;
-    const ONECHAROPERATORS    = /([-+*\/=()&|;:,<>{}[\][?][!][%]])/g;
+    const ONECHAROPERATORS    = /([-+*\/=()&|;:,<>.{}[\]?!%])/g;
     const tokens = [WHITES, ID, NUM, STRING, ONELINECOMMENT,
                   MULTIPLELINECOMMENT, TWOCHAROPERATORS, ONECHAROPERATORS ];
 
@@ -72,7 +72,7 @@ String.prototype.tokens = function (prefix, suffix) {
         return;
 
     // Loop through this text, one character at a time.
-    while (i < this.lengths) {
+    while (i < this.length) {
         tokens.forEach(function(t) { t.lastIndex = i;}); // Cada vez que avanza i, fija todos los lastIndex de los regex a la posición de i
         from = i;
 
