@@ -23,6 +23,14 @@
 
 /*jslint this */
 
+// Equivalente a regex.exec, sin embargo, solo va a devolver el match
+// si ocurrió justo al principio.
+RegExp.prototype.bexec = function(str) {
+    var i = this.lastIndex;
+    var m = this.exec(str);
+    return (m && m.index == i) ? m : null;
+}
+
 String.prototype.tokens = function (prefix, suffix) {
     let from;                   // The index of the start of the token.
     let i = 0;                  // The index of the current character.
@@ -65,6 +73,7 @@ String.prototype.tokens = function (prefix, suffix) {
 
     // Loop through this text, one character at a time.
     while (i < this.lengths) {
+        tokens.forEach(function(t) { t.lastIndex = i;}); // Cada vez que avanza i, fija todos los lastIndex de los regex a la posición de i
         from = i;
 
     }
