@@ -1,0 +1,51 @@
+{
+  "name": "analizador-lexico-para-un-subconjunto-de-javascript-airam-jorge-kevin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "update-gitbook": "node ./scripts/update-gitbook.js",
+    "generate-gitbook": "node ./scripts/generate-gitbook.js",
+    "deploy-gitbook": "node ./scripts/deploy-gitbook.js",
+    "build": "npm run update-gitbook && npm run generate-gitbook",
+    "deploy": "npm run build && npm run deploy-gitbook && node ./scripts/deploy-heroku.js",
+    "serve-temporal": "node index.js",
+    "serve": "nohup sudo -b node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ULL-ESIT-PL-1617/analizador-lexico-para-un-subconjunto-de-javascript-airam-jorge-kevin.git",
+    "gitbookUrl": "https://git.gitbook.com/airamnavas/apuntes-y-expresiones-regulares.git"
+  },
+  "keywords": [
+    "analizador",
+    "lexico",
+    "javascript"
+  ],
+  "author": "Kevin Diaz Marrero, Airam Navas Simón, Jorge Sierra Acosta\"",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ULL-ESIT-PL-1617/analizador-lexico-para-un-subconjunto-de-javascript-airam-jorge-kevin/issues"
+  },
+  "homepage": "https://github.com/ULL-ESIT-PL-1617/analizador-lexico-para-un-subconjunto-de-javascript-airam-jorge-kevin#readme",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.15.2",
+    "express-session": "^1.15.2",
+    "cli-interact": "^0.1.9",
+    "ejs": "^2.5.6",
+    "express": "^4.15.0",
+    "gh-pages": "^0.12.0",
+    "gitbook-cli": "^2.3.0",
+    "gulp": "^3.9.1",
+    "gulp-cli": "^1.2.2",
+    "gulp-shell": "^0.6.1",
+    "shell-task": "^1.0.0",
+    "body-parser": "^1.17.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-shell": "^0.6.1"
+  }
+}

@@ -1,0 +1,646 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Cookies sin ExpressJS · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../chapter11/sessions.html" />
+    
+    
+    <link rel="prev" href="cookies-expressjs.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../chapter1/NodeJS.html">
+            
+                <a href="../chapter1/NodeJS.html">
+            
+                    
+                    NodeJS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chapter2/C9.html">
+            
+                <a href="../chapter2/C9.html">
+            
+                    
+                    Plataforma C9
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../chapter3/Markdown.html">
+            
+                <a href="../chapter3/Markdown.html">
+            
+                    
+                    Markdown
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../chapter4/Git.html">
+            
+                <a href="../chapter4/Git.html">
+            
+                    
+                    Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../chapter4/GitHub.html">
+            
+                <a href="../chapter4/GitHub.html">
+            
+                    
+                    GitHub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../chapter4/gh-pages.html">
+            
+                <a href="../chapter4/gh-pages.html">
+            
+                    
+                    Las gh-pages
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../chapter4/Gulp.html">
+            
+                <a href="../chapter4/Gulp.html">
+            
+                    
+                    Gulp
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../chapter5/Gitbook.html">
+            
+                <a href="../chapter5/Gitbook.html">
+            
+                    
+                    Gitbook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    Routing
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../chapter6/routingBasico.html">
+            
+                <a href="../chapter6/routingBasico.html">
+            
+                    
+                    Routing básico
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../chapter6/routing.html">
+            
+                <a href="../chapter6/routing.html">
+            
+                    
+                    Routing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../chapter7/UsandoMiddleware.html">
+            
+                <a href="../chapter7/UsandoMiddleware.html">
+            
+                    
+                    Usando Middleware
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../chapter8/routerApiDocumentation.html">
+            
+                <a href="../chapter8/routerApiDocumentation.html">
+            
+                    
+                    Router API Documentation
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    Cookies
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../chapter9/introduccion.html">
+            
+                <a href="../chapter9/introduccion.html">
+            
+                    
+                    Introducción
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../chapter9/cookie.html">
+            
+                <a href="../chapter9/cookie.html">
+            
+                    
+                    Qué son las cookies
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../chapter9/query_string.html">
+            
+                <a href="../chapter9/query_string.html">
+            
+                    
+                    Query string
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="cookies-expressjs.html">
+            
+                <a href="cookies-expressjs.html">
+            
+                    
+                    Cookies en ExpressJS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.11.5" data-path="cookies-noExpress.html">
+            
+                <a href="cookies-noExpress.html">
+            
+                    
+                    Cookies sin ExpressJS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="../chapter11/sessions.html">
+            
+                <a href="../chapter11/sessions.html">
+            
+                    
+                    Sessions en ExpressJS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.7" data-path="../chapter11/autenticacion.html">
+            
+                <a href="../chapter11/autenticacion.html">
+            
+                    
+                    Autenticación
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.8" data-path="../chapter11/sessions.html">
+            
+                <a href="../chapter11/sessions.html">
+            
+                    
+                    Sessions en ExpressJS
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../chapter12/Regex.html">
+            
+                <a href="../chapter12/Regex.html">
+            
+                    
+                    Expresiones Regulares
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Cookies sin ExpressJS</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="cookies-sin-express-ni-cookie-parser-http-nodejs">Cookies sin Express ni cookie-parser (HTTP NodeJS)</h1>
+<p>En este apartado vamos a ver y a explicar c&#xF3;mo hacer un ejemplo del uso de cookies sin el uso de express ni parser.</p>
+<p>Primero, necesitaremos instalar el m&#xF3;dulo Cookies. Dicho m&#xF3;dulo es un m&#xF3;dulo node.js para obtener y configurar cookies HTTP(S). Las cookies se pueden firmar para evitar la manipulaci&#xF3;n, utilizando Keygrip. Puede utilizarse con la biblioteca HTTP node.js incorporada o con el middleware Connect/Express.</p>
+<p>La instalaci&#xF3;n se realiza mediante el comando npm install:</p>
+<pre><code>$ npm install cookies
+</code></pre><h4 id="api">API</h4>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> cookie = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;cookie&apos;</span>);
+</code></pre>
+<h5 id="cookieparsestr-options">cookie.parse(str, options)</h5>
+<p>Analiza una cadena del header de cookies HTTP y devuelve un objeto de todos los pares nombre-valor de cookie. El argumento str es la cadena que representa un valor de encabezado Cookie y las opciones son un objeto opcional que contiene opciones de an&#xE1;lisis adicionales.</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> cookies = cookie.parse(<span class="hljs-string">&apos;foo=bar; equation=E%3Dmc%5E2&apos;</span>);
+<span class="hljs-comment">// { foo: &apos;bar&apos;, equation: &apos;E=mc^2&apos; }</span>
+</code></pre>
+<h3 id="escape-html">escape-html</h3>
+<p>Otro m&#xF3;dulo necesario es el <code>escape-html</code>. Cadena de escape para el uso en HTML.
+La instalaci&#xF3;n se realiza mediante el comando npm install:</p>
+<pre><code>$ npm install escape-html
+</code></pre><h5 id="api">API</h5>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> escapeHtml = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;escape-html&apos;</span>);
+</code></pre>
+<h3 id="http">http</h3>
+<p>Utilizaremos el m&#xF3;dulo <code>http</code> para iniciar un simple servidor con Node.js para nuestro ejemplo. El servidor va a ser capaz de tomar la solicitud que envi&#xF3; a trav&#xE9;s del navegador, y tambi&#xE9;n responder a las solicitudes que le envi&#xF3;.</p>
+<h5 id="api">API</h5>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> http = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;http&apos;</span>);
+</code></pre>
+<p>C&#xF3;digo ejemplo:</p>
+<pre><code class="lang-javascript">http.createServer(onRequest).listen(<span class="hljs-number">3000</span>);
+</code></pre>
+<h3 id="url">url</h3>
+<p>Por &#xFA;timo, el m&#xF3;dulo <code>url</code>. Este m&#xF3;dulo tiene utilidades para la resoluci&#xF3;n de URL y analizar significados para tener paridad de caracter&#xED;stica con el m&#xF3;dulo de url del n&#xFA;cleo de node.js.</p>
+<h5 id="api">API</h5>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> url = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;url&apos;</span>);
+</code></pre>
+<h5 id="urlparseurlstr-parsequerystring-slashesdenotehost">url.parse(urlStr, [parseQueryString], [slashesDenoteHost])</h5>
+<p>Toma una cadena de URL y devuelva un objeto.
+Pasamos true como el segundo argumento para analizar tambi&#xE9;n la cadena de consulta utilizando el m&#xF3;dulo querystring. El valor predeterminado es false.
+Pasamos true como el tercer argumento para tratar <code>//foo/bar</code> como <code>{host: &apos;foo&apos;, pathname: &apos;/ bar&apos;}</code> en lugar de <code>{pathname: &apos;//foo/bar&apos;}</code>. El valor predeterminado es false.</p>
+<pre><code>Obviamente, cada uno de los m&#xF3;dulos que hemos nombrado tienen una mayor cantidad
+de APIs, pero s&#xF3;lo hemos mostrado las que usaremos para el uso de nuestro ejemplo.
+</code></pre><h2 id="ejemplo">Ejemplo</h2>
+<p>C&#xF3;digo ejemplo:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> cookie = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;cookie&apos;</span>);
+<span class="hljs-keyword">var</span> escapeHtml = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;escape-html&apos;</span>);
+<span class="hljs-keyword">var</span> http = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;http&apos;</span>);
+<span class="hljs-keyword">var</span> url = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;url&apos;</span>);
+
+<span class="hljs-keyword">var</span> form = <span class="hljs-string">`
+&lt;form method=&quot;GET&quot;&gt;
+  &lt;input placeholder=&quot;Enter your name&quot; name=&quot;name&quot;&gt; 
+  &lt;input type=&quot;submit&quot; value=&quot;Set Name&quot;&gt;
+&lt;/form&gt;
+`</span>;
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">onRequest</span>(<span class="hljs-params">req, res</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(req.url);
+  <span class="hljs-comment">// Parse the query string </span>
+  <span class="hljs-keyword">var</span> query = url.parse(req.url, <span class="hljs-literal">true</span>, <span class="hljs-literal">true</span>).query;
+  <span class="hljs-built_in">console</span>.log(query);
+
+  <span class="hljs-keyword">if</span> (query &amp;&amp; query.name) {
+    <span class="hljs-comment">// Set a new cookie with the name </span>
+    res.setHeader(<span class="hljs-string">&apos;Set-Cookie&apos;</span>, cookie.serialize(<span class="hljs-string">&apos;name&apos;</span>, <span class="hljs-built_in">String</span>(query.name), {
+      httpOnly: <span class="hljs-literal">true</span>,
+      maxAge: <span class="hljs-number">60</span> * <span class="hljs-number">60</span> * <span class="hljs-number">24</span> * <span class="hljs-number">7</span> <span class="hljs-comment">// 1 week </span>
+    }));
+
+    <span class="hljs-comment">// Redirect back after setting cookie </span>
+    res.statusCode = <span class="hljs-number">302</span>;
+    res.setHeader(<span class="hljs-string">&apos;Location&apos;</span>, req.headers.referer || <span class="hljs-string">&apos;/&apos;</span>);
+    res.end();
+    <span class="hljs-keyword">return</span>;
+  }
+
+  <span class="hljs-comment">// Parse the cookies on the request </span>
+  <span class="hljs-keyword">var</span> cookies = cookie.parse(req.headers.cookie || <span class="hljs-string">&apos;&apos;</span>);
+
+  <span class="hljs-comment">// Get the visitor name set in the cookie </span>
+  <span class="hljs-keyword">var</span> name = cookies.name;
+
+  res.setHeader(<span class="hljs-string">&apos;Content-Type&apos;</span>, <span class="hljs-string">&apos;text/html; charset=UTF-8&apos;</span>);
+
+  <span class="hljs-keyword">if</span> (name) {
+    res.write(<span class="hljs-string">`&lt;p&gt;Welcome back, &lt;b&gt; <span class="hljs-subst">${escapeHtml(name)}</span> &lt;/b&gt;!&lt;/p&gt;`</span>);
+  } <span class="hljs-keyword">else</span> {
+    res.write(<span class="hljs-string">&apos;&lt;p&gt;Hello, new visitor!&lt;/p&gt;&apos;</span>);
+  }
+
+  res.write(form);
+  res.end();
+}
+
+http.createServer(onRequest).listen(<span class="hljs-number">3000</span>);
+</code></pre>
+<h4 id="testeando-el-ejemplo">Testeando el ejemplo</h4>
+<ol>
+<li>Creamos un fichero llamado <code>coockiesNoExpress.js</code>(por ejemplo), y copiamos el c&#xF3;digo anterior en el mismo.</li>
+<li>Ejecutamos el comando: <code>$ npm init</code>.</li>
+<li>Ejecutamos el comando: <code>$ npm install --save cookie</code>.</li>
+<li>Ejecutamos el comando: <code>$ npm install --save escape-html</code>.</li>
+<li>Ejecutamos el comando: <code>$ node coockiesNoExpress.js</code>.</li>
+</ol>
+<p>Tras ejecutar el comando del punto 5, el servidor comenzar&#xE1; a correr en nuestro puerto 3000. Si accedemos a un navegador e introducimos la url <code>localhost:3000</code> accederemos a la p&#xE1;gina de nuestro ejemplo con una vista tal que as&#xED;:</p>
+<p><img src="../assets/Vista1cookiesNE.PNG" alt=""></p>
+<p>Tras a&#xF1;adir cualquier nombre en el campo de texto, por ejemplo &quot;chuchu&quot;, y clickar en &quot;Set Name&quot;, podemos comprobar que el resultado ahora es:</p>
+<p><img src="../assets/Vista2cookiesNE.PNG" alt=""></p>
+<p>Como podemos ver, la coockie ha guardado el nombre solicitado al usuario y lo ha mostrado a continuaci&#xF3;n, reconociendo que el usuario que ha entrado a la p&#xE1;gina web es &quot;Kevin&quot;.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="cookies-expressjs.html" class="navigation navigation-prev " aria-label="Previous page: Cookies en ExpressJS">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../chapter11/sessions.html" class="navigation navigation-next " aria-label="Next page: Sessions en ExpressJS">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Cookies sin ExpressJS","level":"1.11.5","depth":2,"next":{"title":"Sessions en ExpressJS","level":"1.11.6","depth":2,"path":"chapter11/sessions.md","ref":"chapter11/sessions.md","articles":[]},"previous":{"title":"Cookies en ExpressJS","level":"1.11.4","depth":2,"path":"chapter10/cookies-expressjs.md","ref":"chapter10/cookies-expressjs.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter10/cookies-noExpress.md","mtime":"2017-03-31T00:22:32.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-31T00:44:37.826Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
