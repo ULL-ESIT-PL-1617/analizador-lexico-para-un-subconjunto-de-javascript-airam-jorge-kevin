@@ -1,0 +1,806 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Router API Documentation · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="../chapter7/UsandoMiddleware.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../chapter1/NodeJS.html">
+            
+                <a href="../chapter1/NodeJS.html">
+            
+                    
+                    NodeJS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chapter2/C9.html">
+            
+                <a href="../chapter2/C9.html">
+            
+                    
+                    Plataforma C9
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../chapter3/Markdown.html">
+            
+                <a href="../chapter3/Markdown.html">
+            
+                    
+                    Markdown
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../chapter4/Git.html">
+            
+                <a href="../chapter4/Git.html">
+            
+                    
+                    Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../chapter4/GitHub.html">
+            
+                <a href="../chapter4/GitHub.html">
+            
+                    
+                    GitHub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../chapter4/gh-pages.html">
+            
+                <a href="../chapter4/gh-pages.html">
+            
+                    
+                    Las gh-pages
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../chapter4/Gulp.html">
+            
+                <a href="../chapter4/Gulp.html">
+            
+                    
+                    Gulp
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../chapter5/Gitbook.html">
+            
+                <a href="../chapter5/Gitbook.html">
+            
+                    
+                    Gitbook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    Routing
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../chapter6/routingBasico.html">
+            
+                <a href="../chapter6/routingBasico.html">
+            
+                    
+                    Routing básico
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../chapter6/routing.html">
+            
+                <a href="../chapter6/routing.html">
+            
+                    
+                    Routing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../chapter7/UsandoMiddleware.html">
+            
+                <a href="../chapter7/UsandoMiddleware.html">
+            
+                    
+                    Usando Middleware
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.10.4" data-path="routerApiDocumentation.html">
+            
+                <a href="routerApiDocumentation.html">
+            
+                    
+                    Router API Documentation
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    Cookies
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../chapter9/introduccion.html">
+            
+                <a href="../chapter9/introduccion.html">
+            
+                    
+                    Introducción
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../chapter9/cookie.html">
+            
+                <a href="../chapter9/cookie.html">
+            
+                    
+                    Qué son las cookies
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../chapter9/query_string.html">
+            
+                <a href="../chapter9/query_string.html">
+            
+                    
+                    Query string
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../chapter10/cookies-expressjs.html">
+            
+                <a href="../chapter10/cookies-expressjs.html">
+            
+                    
+                    Cookies en ExpressJS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../chapter10/cookies-noExpress.html">
+            
+                <a href="../chapter10/cookies-noExpress.html">
+            
+                    
+                    Cookies sin ExpressJS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="../chapter11/sessions.html">
+            
+                <a href="../chapter11/sessions.html">
+            
+                    
+                    Sessions en ExpressJS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.7" data-path="../chapter11/autenticacion.html">
+            
+                <a href="../chapter11/autenticacion.html">
+            
+                    
+                    Autenticación
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.8" data-path="../chapter11/sessions.html">
+            
+                <a href="../chapter11/sessions.html">
+            
+                    
+                    Sessions en ExpressJS
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../chapter12/Regex.html">
+            
+                <a href="../chapter12/Regex.html">
+            
+                    
+                    Expresiones Regulares
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Router API Documentation</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="router">Router</h1>
+<hr>
+<p>Un objeto <em>router</em> es una instancia aislada de middleware y rutas. Tambi&#xE9;n se puede referir a ella como &quot;mini-aplicaci&#xF3;n&quot;, capaz de realizar middelware y funciones de <em>router</em>. Cada aplicaci&#xF3;n <em>Express</em> tiene un <em>router</em> de aplicaciones incorporado.</p>
+<p>Un <em>router</em> se comporta como el propio middleware, por lo que puede utilizarlo como argumento para <em>app.use ()</em> o como argumento para el m&#xE9;todo <em>use()</em> de otro <em>router</em>.</p>
+<p>El objeto express de nivel superior tiene un m&#xE9;todo <em>Router()</em> que crea un nuevo objeto de <em>router</em>.</p>
+<p>Una vez que haya creado un objeto <em>route</em>, puede agregar rutas intermedias y de m&#xE9;todo HTTP (como obtener, publicar, publicar, etc.) como una aplicaci&#xF3;n. Por ejemplo:</p>
+<pre><code class="lang-js"><span class="hljs-comment">// invoked for any requests passed to this router</span>
+router.use(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">req, res, next</span>) </span>{
+  <span class="hljs-comment">// .. some logic here .. like any other middleware</span>
+  next();
+});
+
+<span class="hljs-comment">// will handle any request that ends in /events</span>
+<span class="hljs-comment">// depends on where the router is &quot;use()&apos;d&quot;</span>
+router.get(<span class="hljs-string">&apos;/events&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">req, res, next</span>) </span>{
+  <span class="hljs-comment">// ..</span>
+});
+</code></pre>
+<p>Se puede utilizar un <em>router</em> para una URL ra&#xED;z en particular, de esta manera separar sus rutas en archivos o incluso mini-aplicaciones.</p>
+<pre><code class="lang-js"><span class="hljs-comment">// only requests to /calendar/* will be sent to our &quot;router&quot;</span>
+app.use(<span class="hljs-string">&apos;/calendar&apos;</span>, router);
+</code></pre>
+<h1 id="m&#xE9;todos">M&#xE9;todos</h1>
+<hr>
+<h3 id="router.all">router.all(path, [callback, ...] callback) </h3>
+<p>Este m&#xE9;todo es igual que los m&#xE9;todos <strong>router.METHOD()</strong>, excepto que coincide con todos los m&#xE9;todos HTTP (verbos).</p>
+<p>Este m&#xE9;todo es extremadamente &#xFA;til para mapear la l&#xF3;gica &quot;global&quot; para prefijos de ruta espec&#xED;ficos o coincidencias arbitrarias. Por ejemplo, si coloco la ruta siguiente en la parte superior de todas las dem&#xE1;s definiciones de ruta, se requerir&#xED;a que todas las rutas a partir de ese punto requieran autentificaci&#xF3;n y cargar&#xED;an autom&#xE1;ticamente un usuario. Tenga en cuenta que estas devoluciones de llamada no tienen que actuar como puntos finales; <strong>LoadUser</strong> puede realizar una tarea y luego llamar a <em>next()</em> para seguir comparando las rutas subsiguientes.</p>
+<pre><code class="lang-js">router.all(<span class="hljs-string">&apos;*&apos;</span>, requireAuthentication, loadUser);
+</code></pre>
+<p>O el equivalente:</p>
+<pre><code class="lang-js">router.all(<span class="hljs-string">&apos;*&apos;</span>, requireAuthentication)
+router.all(<span class="hljs-string">&apos;*&apos;</span>, loadUser);
+</code></pre>
+<p>Otro ejemplo de esto es la funcionalidad &quot;global&quot; listada en blanco. Aqu&#xED; el ejemplo es como antes, pero s&#xF3;lo restringe los caminos prefijados con <em>&quot;/api&quot;</em>:</p>
+<pre><code class="lang-js">router.all(<span class="hljs-string">&apos;/api/*&apos;</span>, requireAuthentication);
+</code></pre>
+<h2 id="routermethodruta-callback--callback">router.METHOD(ruta, [callback, ...] callback)</h2>
+<p>Los m&#xE9;todos <strong>router.METHOD()</strong> proporcionan la funcionalidad de enrutamiento en Express, donde METHOD es uno de los m&#xE9;todos HTTP, como GET, PUT, POST y as&#xED; sucesivamente, en min&#xFA;sculas. Por lo tanto, los m&#xE9;todos actuales son <strong>router.get()</strong>, <strong>router.post()</strong>, <strong>router.put()</strong>, y as&#xED; sucesivamente.</p>
+<pre><code>La funci&#xF3;n router.get() se llama autom&#xE1;ticamente al m&#xE9;todo HEAD de HTTP adem&#xE1;s del m&#xE9;todo GET si
+router.head() no fue llamado para la ruta antes de router.get().
+</code></pre><p>Puede proporcionar m&#xFA;ltiples <em>callback</em>, y todas se tratan de la misma forma, y se comportan como middleware, excepto que estas <em>callback _pueden invocar a continuaci&#xF3;n </em>(&apos;ruta&apos;)<em> para omitir la(s) llamada(s) de _route</em> restantes. Puede utilizar este mecanismo para realizar las condiciones previas en una ruta y, a continuaci&#xF3;n, pasar el control a las rutas subsiguientes cuando no haya ninguna raz&#xF3;n para proceder con la ruta coincidente.</p>
+<p>El fragmento siguiente ilustra la definici&#xF3;n de ruta m&#xE1;s sencilla posible. Express traduce las cadenas de ruta a expresiones regulares, utilizadas internamente para coincidir con las solicitudes entrantes. Las cadenas de consulta no se consideran al realizar estas coincidencias, por ejemplo <em>&quot;GET /&quot;</em> coincidir&#xED;a con la ruta siguiente, al igual que <em>&quot;GET/?Name=tobi&quot;</em>.</p>
+<pre><code class="lang-js">router.get(<span class="hljs-string">&apos;/&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">req, res</span>)</span>{
+  res.send(<span class="hljs-string">&apos;hello world&apos;</span>);
+});
+</code></pre>
+<p>Tambi&#xE9;n se puede usar expresiones regulares, &#xFA;til si tiene restricciones muy espec&#xED;ficas, por ejemplo, la siguiente coincidir&#xED;a con <em>&quot;GET /commits/71dbb9c&quot;</em> as&#xED; como <em>&quot;GET /commits/71dbb9c..4c084f9&quot;</em>.</p>
+<pre><code class="lang-js">router.get(<span class="hljs-regexp">/^\/commits\/(\w+)(?:\.\.(\w+))?$/</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">req, res</span>)</span>{
+  <span class="hljs-keyword">var</span> <span class="hljs-keyword">from</span> = req.params[<span class="hljs-number">0</span>];
+  <span class="hljs-keyword">var</span> to = req.params[<span class="hljs-number">1</span>] || <span class="hljs-string">&apos;HEAD&apos;</span>;
+  res.send(<span class="hljs-string">&apos;commit range &apos;</span> + <span class="hljs-keyword">from</span> + <span class="hljs-string">&apos;..&apos;</span> + to);
+});
+</code></pre>
+<h2 id="routerparamnombre-callback">router.param(nombre, callback)</h2>
+<p>Agrega los disparadores de callback a los par&#xE1;metros de ruta, donde <em>nombre</em> es el nombre del par&#xE1;metro y la <em>callback</em> es la funci&#xF3;n de callback. Aunque el nombre es t&#xE9;cnicamente opcional, el uso de este m&#xE9;todo sin que sea obsoleto a partir de Express v4.11.0 (consulte a continuaci&#xF3;n).</p>
+<p>Los par&#xE1;metros de la funci&#xF3;n de callback son:</p>
+<ul>
+<li><p>req, el objeto request.</p>
+</li>
+<li><p>res, el objeto de response.</p>
+</li>
+<li><p>next, indicando la siguiente funci&#xF3;n de middleware.</p>
+</li>
+<li><p>El valor del par&#xE1;metro <em>name</em>.</p>
+</li>
+<li><p>El nombre del par&#xE1;metro.</p>
+</li>
+</ul>
+<pre><code>A diferencia de app.param(), router.param() no acepta una matriz de par&#xE1;metros de ruta.
+</code></pre><p>Por ejemplo, cuando: el usuario est&#xE1; presente en una ruta, puede mapear la l&#xF3;gica de carga del usuario para proporcionar autom&#xE1;ticamente <code>req.user</code> a la ruta o realizar validaciones en la entrada de par&#xE1;metros.</p>
+<pre><code class="lang-js">router.param(<span class="hljs-string">&apos;user&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">req, res, next, id</span>) </span>{
+
+  <span class="hljs-comment">// try to get the user details from the User model and attach it to the request object</span>
+  User.find(id, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, user</span>) </span>{
+    <span class="hljs-keyword">if</span> (err) {
+      next(err);
+    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (user) {
+      req.user = user;
+      next();
+    } <span class="hljs-keyword">else</span> {
+      next(<span class="hljs-keyword">new</span> <span class="hljs-built_in">Error</span>(<span class="hljs-string">&apos;failed to load user&apos;</span>));
+    }
+  });
+});
+</code></pre>
+<p>Las funciones de callback de par&#xE1;metros son locales al enrutador en el que se definen. No son heredadas por aplicaciones montadas o enrutadores. Por lo tanto, las callback de par&#xE1;metros definidas en el enrutador se activar&#xE1;n s&#xF3;lo por los par&#xE1;metros de ruta definidos en las rutas del enrutador.</p>
+<p>Una callback de par&#xE1;metro se llamar&#xE1; s&#xF3;lo una vez en un ciclo de <em>request-response</em>, incluso si el par&#xE1;metro coincide en varias rutas, como se muestra en los ejemplos siguientes.</p>
+<pre><code class="lang-js">router.param(<span class="hljs-string">&apos;id&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">req, res, next, id</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;CALLED ONLY ONCE&apos;</span>);
+  next();
+});
+
+router.get(<span class="hljs-string">&apos;/user/:id&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">req, res, next</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;although this matches&apos;</span>);
+  next();
+});
+
+router.get(<span class="hljs-string">&apos;/user/:id&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">req, res</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;and this matches too&apos;</span>);
+  res.end();
+});
+</code></pre>
+<p>En <em>GET /user/42</em>, se imprime lo siguiente:</p>
+<pre><code class="lang-bash">CALLED ONLY ONCE
+although this matches
+and this matches too
+</code></pre>
+<pre><code>La siguiente secci&#xF3;n describe router.param(callback), que est&#xE1; obsoleto a partir
+de v4.11.0.
+</code></pre><p>El comportamiento del m&#xE9;todo <strong>router.param(nombre, callback)</strong> se puede alterar enteramente pasando s&#xF3;lo una funci&#xF3;n a <strong>router.param()</strong>. Esta funci&#xF3;n es una implementaci&#xF3;n personalizada de c&#xF3;mo se debe comportar <strong>router.param(name, callback)</strong> --&gt; acepta dos par&#xE1;metros y debe devolver un middleware.</p>
+<p>El primer par&#xE1;metro de esta funci&#xF3;n es el nombre del par&#xE1;metro URL que debe capturarse, el segundo par&#xE1;metro puede ser cualquier objeto <em>JavaScript</em> que pueda ser utilizado para devolver la implementaci&#xF3;n del middleware.</p>
+<p>El middleware devuelto por la funci&#xF3;n decide el comportamiento de lo que ocurre cuando se captura un par&#xE1;metro de URL.</p>
+<p>En este ejemplo, la firma <strong>router.param (nombre, callback)</strong> se modifica en <strong>router.param(nombre, ID de acceso)</strong>. En lugar de aceptar un nombre y una callback, <strong>router.param()</strong> aceptar&#xE1; ahora un nombre y un n&#xFA;mero.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;express&apos;</span>);
+<span class="hljs-keyword">var</span> app = express();
+<span class="hljs-keyword">var</span> router = express.Router();
+
+<span class="hljs-comment">// customizing the behavior of router.param()</span>
+router.param(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">param, option</span>) </span>{
+  <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">req, res, next, val</span>) </span>{
+    <span class="hljs-keyword">if</span> (val == option) {
+      next();
+    }
+    <span class="hljs-keyword">else</span> {
+      res.sendStatus(<span class="hljs-number">403</span>);
+    }
+  }
+});
+
+<span class="hljs-comment">// using the customized router.param()</span>
+router.param(<span class="hljs-string">&apos;id&apos;</span>, <span class="hljs-number">1337</span>);
+
+<span class="hljs-comment">// route to trigger the capture</span>
+router.get(<span class="hljs-string">&apos;/user/:id&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">req, res</span>) </span>{
+  res.send(<span class="hljs-string">&apos;OK&apos;</span>);
+});
+
+app.use(router);
+
+app.listen(<span class="hljs-number">3000</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;Ready&apos;</span>);
+});
+</code></pre>
+<p>En este ejemplo, la firma <strong>router.param(nombre, callback)</strong> permanece igual, pero en lugar de una callback de middleware, se ha definido una funci&#xF3;n de comprobaci&#xF3;n de tipo de dato personalizada para validar el tipo de dato del ID de usuario.</p>
+<pre><code class="lang-js">router.param(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">param, validator</span>) </span>{
+  <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">req, res, next, val</span>) </span>{
+    <span class="hljs-keyword">if</span> (validator(val)) {
+      next();
+    }
+    <span class="hljs-keyword">else</span> {
+      res.sendStatus(<span class="hljs-number">403</span>);
+    }
+  }
+});
+
+router.param(<span class="hljs-string">&apos;id&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">candidate</span>) </span>{
+  <span class="hljs-keyword">return</span> !<span class="hljs-built_in">isNaN</span>(<span class="hljs-built_in">parseFloat</span>(candidate)) &amp;&amp; <span class="hljs-built_in">isFinite</span>(candidate);
+});
+</code></pre>
+<h2 id="routerroutepath">router.route(path)</h2>
+<p>Devuelve una instancia de una sola ruta que se puede utilizar para manejar verbos HTTP con middleware opcional. Utilice <strong>router.route()</strong> para evitar la asignaci&#xF3;n de rutas duplicadas y, por lo tanto, errores de escritura.</p>
+<p>Bas&#xE1;ndose en el ejemplo de <strong>router.param()</strong> anterior, el siguiente c&#xF3;digo muestra c&#xF3;mo utilizar <strong>router.route()</strong> para especificar varios manejadores de m&#xE9;todos HTTP.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> router = express.Router();
+
+router.param(<span class="hljs-string">&apos;user_id&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">req, res, next, id</span>) </span>{
+  <span class="hljs-comment">// sample user, would actually fetch from DB, etc...</span>
+  req.user = {
+    id: id,
+    name: <span class="hljs-string">&apos;TJ&apos;</span>
+  };
+  next();
+});
+
+router.route(<span class="hljs-string">&apos;/users/:user_id&apos;</span>)
+.all(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">req, res, next</span>) </span>{
+  <span class="hljs-comment">// runs for all HTTP verbs first</span>
+  <span class="hljs-comment">// think of it as route specific middleware!</span>
+  next();
+})
+.get(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">req, res, next</span>) </span>{
+  res.json(req.user);
+})
+.put(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">req, res, next</span>) </span>{
+  <span class="hljs-comment">// just an example of maybe updating the user</span>
+  req.user.name = req.params.name;
+  <span class="hljs-comment">// save user ... etc</span>
+  res.json(req.user);
+})
+.post(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">req, res, next</span>) </span>{
+  next(<span class="hljs-keyword">new</span> <span class="hljs-built_in">Error</span>(<span class="hljs-string">&apos;not implemented&apos;</span>));
+})
+.delete(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">req, res, next</span>) </span>{
+  next(<span class="hljs-keyword">new</span> <span class="hljs-built_in">Error</span>(<span class="hljs-string">&apos;not implemented&apos;</span>));
+});
+</code></pre>
+<p>Este enfoque reutiliza la ruta single <em>/users/:user</em>_<em>id</em> y agrega controladores para varios m&#xE9;todos HTTP.</p>
+<pre><code>NOTA: Cuando se utiliza router.route(), el ordenamiento del middleware se basa en la fecha de creaci&#xF3;n
+de la ruta, no cuando se agregan manejadores de m&#xE9;todos a la ruta. Para ello, puede considerar que
+los manejadores de m&#xE9;todos pertenezcan a la ruta a la que fueron agregados.
+</code></pre><h2 id="routeruseruta-funci&#xF3;n--funci&#xF3;n">router.use([ruta], [funci&#xF3;n, ...] funci&#xF3;n)</h2>
+<p>Utiliza la funci&#xF3;n o funciones de middleware especificadas, con la ruta de acceso de montaje opcional, cuyo valor predeterminado es <em>&quot;/&quot;</em>.</p>
+<p>Este m&#xE9;todo es similar a <strong>app.use()</strong>. A continuaci&#xF3;n se describe un ejemplo simple y un caso de uso.</p>
+<p>El middleware es como un tubo de fontaner&#xED;a: las solicitudes comienzan en la primera funci&#xF3;n de middleware definida y funcionan de manera &quot;descendente&quot; en el procesamiento de la pila de middleware para cada ruta que coincidan.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;express&apos;</span>);
+<span class="hljs-keyword">var</span> app = express();
+<span class="hljs-keyword">var</span> router = express.Router();
+
+<span class="hljs-comment">// simple logger for this router&apos;s requests</span>
+<span class="hljs-comment">// all requests to this router will first hit this middleware</span>
+router.use(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">req, res, next</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;%s %s %s&apos;</span>, req.method, req.url, req.path);
+  next();
+});
+
+<span class="hljs-comment">// this will only be invoked if the path starts with /bar from the mount point</span>
+router.use(<span class="hljs-string">&apos;/bar&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">req, res, next</span>) </span>{
+  <span class="hljs-comment">// ... maybe some additional /bar logging ...</span>
+  next();
+});
+
+<span class="hljs-comment">// always invoked</span>
+router.use(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">req, res, next</span>) </span>{
+  res.send(<span class="hljs-string">&apos;Hello World&apos;</span>);
+});
+
+app.use(<span class="hljs-string">&apos;/foo&apos;</span>, router);
+
+app.listen(<span class="hljs-number">3000</span>);
+</code></pre>
+<p>La ruta de &quot;montaje&quot; se quita y no es visible para la funci&#xF3;n de middleware. El efecto principal de esta caracter&#xED;stica es que una funci&#xF3;n de middleware montada puede operar sin cambios de c&#xF3;digo independientemente de su ruta de acceso &quot;prefix&quot;.</p>
+<p>El orden en el que se define middleware con <strong>router.use()</strong> es muy importante. Se invocan secuencialmente, por lo que el orden define la precedencia de middleware. Por ejemplo, por lo general, un registrador es el primer middleware que utilizar&#xED;a, de modo que cada solicitud se registra.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> logger = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;morgan&apos;</span>);
+
+router.use(logger());
+router.use(express.static(__dirname + <span class="hljs-string">&apos;/public&apos;</span>));
+router.use(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">req, res</span>)</span>{
+  res.send(<span class="hljs-string">&apos;Hello&apos;</span>);
+});
+</code></pre>
+<p>Ahora supongamos que desea ignorar las solicitudes de registro de archivos est&#xE1;ticos, pero para continuar registrando rutas y middleware definidos despu&#xE9;s de <strong>logger()</strong>. Simplemente mover la llamada a <strong>express.static()</strong> a la parte superior, antes de agregar el logger middleware:</p>
+<pre><code class="lang-js">router.use(express.static(__dirname + <span class="hljs-string">&apos;/public&apos;</span>));
+router.use(logger());
+router.use(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">req, res</span>)</span>{
+  res.send(<span class="hljs-string">&apos;Hello&apos;</span>);
+});
+</code></pre>
+<p>Otro ejemplo es servir archivos de varios directorios, dando prioridad a <em>&quot;./public&quot;</em> sobre los dem&#xE1;s:</p>
+<pre><code class="lang-js">app.use(express.static(__dirname + <span class="hljs-string">&apos;/public&apos;</span>));
+app.use(express.static(__dirname + <span class="hljs-string">&apos;/files&apos;</span>));
+app.use(express.static(__dirname + <span class="hljs-string">&apos;/uploads&apos;</span>));
+</code></pre>
+<p>El m&#xE9;todo router.use() tambi&#xE9;n admite par&#xE1;metros con nombre para que los puntos de montaje de otros enrutadores se puedan beneficiar de la precarga mediante par&#xE1;metros con nombre.</p>
+<p>NOTA: Aunque estas funciones de middleware se agregan a trav&#xE9;s de un enrutador en particular, cuando se ejecutan se define por la ruta a la que est&#xE1;n conectados (no el enrutador). Por lo tanto, middleware agregado a trav&#xE9;s de un enrutador puede correr para otros enrutadores si sus rutas coinciden. Por ejemplo, este c&#xF3;digo muestra dos routers diferentes montados en la misma ruta:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> authRouter = express.Router();
+<span class="hljs-keyword">var</span> openRouter = express.Router();
+
+authRouter.use(<span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;./authenticate&apos;</span>).basic(usersdb));
+
+authRouter.get(<span class="hljs-string">&apos;/:user_id/edit&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">req, res, next</span>) </span>{ 
+  <span class="hljs-comment">// ... Edit user UI ...  </span>
+});
+openRouter.get(<span class="hljs-string">&apos;/&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">req, res, next</span>) </span>{ 
+  <span class="hljs-comment">// ... List users ... </span>
+})
+openRouter.get(<span class="hljs-string">&apos;/:user_id&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">req, res, next</span>) </span>{ 
+  <span class="hljs-comment">// ... View user ... </span>
+})
+
+app.use(<span class="hljs-string">&apos;/users&apos;</span>, authRouter);
+app.use(<span class="hljs-string">&apos;/users&apos;</span>, openRouter);
+</code></pre>
+<p>A pesar de que el middleware de autentificaci&#xF3;n se ha a&#xF1;adido a trav&#xE9;s de <em>authRouter</em> se ejecutar&#xE1; en las rutas definidas por el <em>openRouter</em>, as&#xED; como ambos routers fueron montados en <em>/users</em>. Para evitar este comportamiento, utilice rutas diferentes para cada enrutador.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../chapter7/UsandoMiddleware.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Usando Middleware">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Router API Documentation","level":"1.10.4","depth":2,"next":{"title":"Cookies","level":"1.11","depth":1,"ref":"","articles":[{"title":"Introducción","level":"1.11.1","depth":2,"path":"chapter9/introduccion.md","ref":"chapter9/introduccion.md","articles":[]},{"title":"Qué son las cookies","level":"1.11.2","depth":2,"path":"chapter9/cookie.md","ref":"chapter9/cookie.md","articles":[]},{"title":"Query string","level":"1.11.3","depth":2,"path":"chapter9/query_string.md","ref":"chapter9/query_string.md","articles":[]},{"title":"Cookies en ExpressJS","level":"1.11.4","depth":2,"path":"chapter10/cookies-expressjs.md","ref":"chapter10/cookies-expressjs.md","articles":[]},{"title":"Cookies sin ExpressJS","level":"1.11.5","depth":2,"path":"chapter10/cookies-noExpress.md","ref":"chapter10/cookies-noExpress.md","articles":[]},{"title":"Sessions en ExpressJS","level":"1.11.6","depth":2,"path":"chapter11/sessions.md","ref":"chapter11/sessions.md","articles":[]},{"title":"Autenticación","level":"1.11.7","depth":2,"path":"chapter11/autenticacion.md","ref":"chapter11/autenticacion.md","articles":[]},{"title":"Sessions en ExpressJS","level":"1.11.8","depth":2,"path":"chapter11/sessions.md","ref":"chapter11/sessions.md","articles":[]}]},"previous":{"title":"Usando Middleware","level":"1.10.3","depth":2,"path":"chapter7/UsandoMiddleware.md","ref":"chapter7/UsandoMiddleware.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter8/routerApiDocumentation.md","mtime":"2017-03-31T00:22:32.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-31T00:44:37.826Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

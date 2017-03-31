@@ -1,0 +1,758 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Expresiones Regulares · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="../chapter11/sessions.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../chapter1/NodeJS.html">
+            
+                <a href="../chapter1/NodeJS.html">
+            
+                    
+                    NodeJS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chapter2/C9.html">
+            
+                <a href="../chapter2/C9.html">
+            
+                    
+                    Plataforma C9
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../chapter3/Markdown.html">
+            
+                <a href="../chapter3/Markdown.html">
+            
+                    
+                    Markdown
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../chapter4/Git.html">
+            
+                <a href="../chapter4/Git.html">
+            
+                    
+                    Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../chapter4/GitHub.html">
+            
+                <a href="../chapter4/GitHub.html">
+            
+                    
+                    GitHub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../chapter4/gh-pages.html">
+            
+                <a href="../chapter4/gh-pages.html">
+            
+                    
+                    Las gh-pages
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../chapter4/Gulp.html">
+            
+                <a href="../chapter4/Gulp.html">
+            
+                    
+                    Gulp
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../chapter5/Gitbook.html">
+            
+                <a href="../chapter5/Gitbook.html">
+            
+                    
+                    Gitbook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    Routing
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../chapter6/routingBasico.html">
+            
+                <a href="../chapter6/routingBasico.html">
+            
+                    
+                    Routing básico
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../chapter6/routing.html">
+            
+                <a href="../chapter6/routing.html">
+            
+                    
+                    Routing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../chapter7/UsandoMiddleware.html">
+            
+                <a href="../chapter7/UsandoMiddleware.html">
+            
+                    
+                    Usando Middleware
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../chapter8/routerApiDocumentation.html">
+            
+                <a href="../chapter8/routerApiDocumentation.html">
+            
+                    
+                    Router API Documentation
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    Cookies
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../chapter9/introduccion.html">
+            
+                <a href="../chapter9/introduccion.html">
+            
+                    
+                    Introducción
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../chapter9/cookie.html">
+            
+                <a href="../chapter9/cookie.html">
+            
+                    
+                    Qué son las cookies
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../chapter9/query_string.html">
+            
+                <a href="../chapter9/query_string.html">
+            
+                    
+                    Query string
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../chapter10/cookies-expressjs.html">
+            
+                <a href="../chapter10/cookies-expressjs.html">
+            
+                    
+                    Cookies en ExpressJS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../chapter10/cookies-noExpress.html">
+            
+                <a href="../chapter10/cookies-noExpress.html">
+            
+                    
+                    Cookies sin ExpressJS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="../chapter11/sessions.html">
+            
+                <a href="../chapter11/sessions.html">
+            
+                    
+                    Sessions en ExpressJS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.7" data-path="../chapter11/autenticacion.html">
+            
+                <a href="../chapter11/autenticacion.html">
+            
+                    
+                    Autenticación
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.8" data-path="../chapter11/sessions.html">
+            
+                <a href="../chapter11/sessions.html">
+            
+                    
+                    Sessions en ExpressJS
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.12" data-path="Regex.html">
+            
+                <a href="Regex.html">
+            
+                    
+                    Expresiones Regulares
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Expresiones Regulares</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="expresiones-regulares-javascript">Expresiones regulares (JavaScript)</h1>
+<p>Las expresiones regulares nos permite ver si una cadena de texto cumple un determinado formato, por ejemplo, si todo son d&#xED;gitos, si tiene formato de fecha y hora, etc. Tambi&#xE9;n nos permiten extraer partes de esa cadena de texto que cumplan ese formato, por ejemplo, si dentro de un texto m&#xE1;s o menos largo hay una fecha, podemos extraerla f&#xE1;cilmente. Veamos aqu&#xED; un peque&#xF1;o tutorial empezando por la m&#xE1;s b&#xE1;sico y complic&#xE1;ndolo poco a poco.</p>
+<h2 id="expresiones-simples">Expresiones simples</h2>
+<p>Una expresi&#xF3;n regular se construye con una cadena de texto que representa el formato que debe cumplir el texto. En javascript se puede hacer de dos formas, bien instanciando una clase RegExp pas&#xE1;ndo como par&#xE1;metro la cadena de formato, bien poniendo directamente la cedena de formato, en vez de entre comillas, entre /</p>
+<pre><code class="lang-javascript"> <span class="hljs-comment">// Son equivalentes</span>
+ <span class="hljs-keyword">var</span> reg = <span class="hljs-keyword">new</span> <span class="hljs-built_in">RegExp</span>(<span class="hljs-string">&quot;aa&quot;</span>)
+ <span class="hljs-keyword">var</span> reg = <span class="hljs-regexp">/aa/</span>
+</code></pre>
+<p> Ver si un texto tiene una determinada secuencia de letras o n&#xFA;meros fija es f&#xE1;cil. La expresi&#xF3;n simplemente es esa cadena y podemos ver si un texto la tiene usando el m&#xE9;todo match() de ese texto</p>
+<pre><code class="lang-javascript"> <span class="hljs-keyword">var</span> reg = <span class="hljs-regexp">/javascript/</span>;
+ <span class="hljs-string">&quot;hola javascript&quot;</span>.match(reg);
+ <span class="hljs-comment">// devuelve un array de 1 elemento [&quot;javascript&quot;], indicando que s&#xED; existe esa cadena dentro del texto</span>
+
+ <span class="hljs-string">&quot;adios tu&quot;</span>.match(reg); 
+ <span class="hljs-comment">// devuelve null, indicando que no existe javascript dentro de &quot;adios tu&quot;.</span>
+</code></pre>
+<p>No es necesario definir la expresi&#xF3;n regular antes, podemos hacerlo as&#xED;</p>
+<pre><code class="lang-javascript"> <span class="hljs-string">&quot;hola javascript&quot;</span>.match(<span class="hljs-regexp">/javascript/</span>);
+ <span class="hljs-comment">// Devuelve [&quot;javascript&quot;]</span>
+</code></pre>
+<p>Y para verificar si existe o no la cadena, podemos poner directamente un if</p>
+<pre><code class="lang-javascript"> <span class="hljs-keyword">if</span> (<span class="hljs-string">&quot;hola javascript&quot;</span>.match(<span class="hljs-regexp">/javascript/</span>) {
+    <span class="hljs-comment">// Pasar&#xE1; por aqu&#xED;, porque un array con un elemento se evalua como true en el if</span>
+ }
+
+ <span class="hljs-keyword">if</span> (<span class="hljs-string">&quot;adios tu&quot;</span>.match(<span class="hljs-regexp">/javascript/</span>) {
+    <span class="hljs-comment">// No pasa por aqu&#xED;, null se eval&#xFA;a como false en el if.</span>
+ }
+</code></pre>
+<h2 id="caracteres-no-alfab&#xE9;ticos-ni-num&#xE9;ricos">Caracteres no alfab&#xE9;ticos ni num&#xE9;ricos</h2>
+<p> Algunos de los caracteres no num&#xE9;ricos ni alfab&#xE9;ticos tienen un significado especial (lo vemos m&#xE1;s adelante), como por ejemplo [ ] { } ( ) * . ^ $ etc. No podemos ponerlos tal cual si forman parte de nuestro formato, debemos &quot;escaparlos&quot; poniendo \ delante</p>
+<pre><code class="lang-javascript"> <span class="hljs-string">&quot;esto es un *&quot;</span>.match(<span class="hljs-regexp">/\*/</span>);
+ <span class="hljs-comment">// Devuelve [&quot;*&quot;] indicando que existe un asterisco.</span>
+</code></pre>
+<h2 id="conjunto-opcional-de-caracteres">Conjunto opcional de caracteres</h2>
+<p> A veces nos da igual que una letra, por ejemplo, sea may&#xFA;scula o min&#xFA;scula, o queremos que sea una vocal, o un d&#xED;gito. Cuando queremos que una de las letras de nuestro texto pueda ser una cualquiera de un conjunto de letras determinado, las ponemos entre [] en nuestra expresi&#xF3;n. Por ejemplo, si nos vale &quot;Javascript&quot; y &quot;javascript&quot;, podemos poner la expresi&#xF3;n como /[Jj]avascript/ para indicar que nos vale J may&#xFA;scula o j min&#xFA;scula</p>
+<pre><code class="lang-javascript">  <span class="hljs-string">&quot;javascript con minuscula&quot;</span>.match(<span class="hljs-regexp">/[Jj]avascript/</span>);
+ <span class="hljs-comment">// S&#xED; encuentra la cadena</span>
+ <span class="hljs-string">&quot;Javascript con minuscula&quot;</span>.match(<span class="hljs-regexp">/[Jj]avascript/</span>);
+ <span class="hljs-comment">// Tambi&#xE9;n la encuentra.</span>
+</code></pre>
+<p> Si los caracteres v&#xE1;lidos son varios y van ordenados seg&#xFA;n el juego de caracteres, podemos poner el primero y el &#xFA;ltimo separados por un -. Por ejemplo, [a-z] vale para cualquier letra min&#xFA;scula, [0-9] para cualquier d&#xED;gito y [a-zA-Z] para cualquier letra may&#xFA;scula o min&#xFA;scula</p>
+<pre><code class="lang-javasript">  &quot;aa2bb&quot;.match(/[0-9]/);  // Encuentra el 2, devolviendo [&quot;2&quot;].
+</code></pre>
+<p>  Podemos hacer lo contrario, es decir, que la letra no est&#xE9; en ese conjunto de caracteres. Se hace poniendo el juego de caracteres que no queremos entre <code>[^ y ]</code>. Por ejemplo, para no d&#xED;gitos pondr&#xED;amos <code>[^0-9]</code></p>
+<pre><code class="lang-javascript">   <span class="hljs-string">&quot;22 33&quot;</span>.match(<span class="hljs-regexp">/[^0-9]/</span>); <span class="hljs-comment">// Encuentra el espacio en blanco, devolviendo [&quot; &quot;]</span>
+</code></pre>
+<h2 id="conjuntos-habituales">Conjuntos habituales</h2>
+<p>   Hay varios conjuntos que se usan con frecuencia, como el de letras [a-zA-Z], el de d&#xED;gitos [0-9] o el de espacios en blanco (espacio, tabulador, etc). Para estos conjuntos la expresi&#xF3;n regular define formas abreviadas, como:</p>
+<pre><code>\w para letras, equivalente a [a-zA-Z]
+\W para no letras, equivalente a [^a-zA-Z]
+\d para d&#xED;gitos, equivalente a [0-9]
+\D para no d&#xED;gitos, equivalente a [^0-9]
+\s para espacios en blanco (espacios, tabuladores, etc).
+\S para no espacios en blanco.
+</code></pre><p>Por ejemplo:</p>
+<pre><code class="lang-javascript"> <span class="hljs-string">&quot;aa2bb&quot;</span>.match(<span class="hljs-regexp">/\d/</span>); <span class="hljs-comment">// Encuentra el 2, devolviendo [&quot;2&quot;]</span>
+</code></pre>
+<h2 id="repetici&#xF3;n-de-caracteres">Repetici&#xF3;n de caracteres</h2>
+<p>Podemos querer buscar por ejemplo un conjunto de tres digitos, podemos hacerlo repitiendo tres veces el \d</p>
+<pre><code class="lang-javascript"> <span class="hljs-string">&quot;aa123bb&quot;</span>.match(<span class="hljs-regexp">/\d\d\d/</span>);   <span class="hljs-comment">// Encuentra el 123, devolviendo [&quot;123&quot;]</span>
+</code></pre>
+<p>pero esta forma es un poco engorrosa si hay muchos caracteres y es poco vers&#xE1;til. Las expresiones regulares nos permiten poner entre {} un rango de veces que debe repetirse. por ejemplo</p>
+<pre><code class="lang-javascript">/\d{<span class="hljs-number">3</span>}/       Busca <span class="hljs-number">3</span> d&#xED;gitos en la cadena
+/\d{<span class="hljs-number">1</span>,<span class="hljs-number">5</span>}/     Busca entre <span class="hljs-number">1</span> y <span class="hljs-number">5</span> d&#xED;gitos en la cadena.
+/\d{<span class="hljs-number">2</span>,}/      Busca <span class="hljs-number">2</span> d&#xED;gitos o m&#xE1;s en la cadena.
+</code></pre>
+<p>como ejemplos</p>
+<pre><code class="lang-javascript"><span class="hljs-string">&quot;1234&quot;</span>.match(<span class="hljs-regexp">/\d{2}/</span>);
+[<span class="hljs-string">&quot;12&quot;</span>]
+
+<span class="hljs-string">&quot;1234&quot;</span>.match(<span class="hljs-regexp">/\d{1,3}/</span>);
+[<span class="hljs-string">&quot;123&quot;</span>]
+
+<span class="hljs-string">&quot;1234&quot;</span>.match(<span class="hljs-regexp">/\d{3,10}/</span>)
+[<span class="hljs-string">&quot;1234&quot;</span>]
+</code></pre>
+<p>Tambi&#xE9;n suele haber rangos habituales como 0 o m&#xE1;s veces, 1 o m&#xE1;s veces, 0 &#xF3; 1 vez. Estos rangos habituales tienen caracteres especiales que nos permiten ponerlos de forma m&#xE1;s simple.</p>
+<pre><code>* equivale a 0 o m&#xE1;s veces {0,}
++ equivale a 1 o m&#xE1;s veces {1,}
+? equivale a 0 &#xF3; 1 vez {0,1}
+</code></pre><p>Por ejemplo</p>
+<pre><code class="lang-javascript"> <span class="hljs-string">&quot;a2a&quot;</span>.match(<span class="hljs-regexp">/a\d+a/</span>);   <span class="hljs-comment">// Encuentra a2a</span>
+ <span class="hljs-string">&quot;a234a&quot;</span>.match(<span class="hljs-regexp">/a\d+a/</span>);  <span class="hljs-comment">// Encuentra a234a</span>
+</code></pre>
+<p>Cosas como * o + encuentran el m&#xE1;ximo posible de caracteres. Por ejemplo, si nuestro patr&#xF3;n es /a+/ y nuestra cadena es &quot;aaaaa&quot;, el resultado ser&#xE1; todo la cadena</p>
+<pre><code class="lang-javascript"> <span class="hljs-string">&quot;aaaaa&quot;</span>.match(<span class="hljs-regexp">/a+/</span>);  <span class="hljs-comment">// Devuelve [&quot;aaaaa&quot;]</span>
+</code></pre>
+<p>Para hacer que se encuentre lo menos posible, se pone un ? detr&#xE1;s. As&#xED; por ejemplo, si nuestra expresi&#xF3;n regular es /a+?/ y nuestra cadena es &quot;aaaaa&quot;, s&#xF3;lo se encontrar&#xE1; una &quot;a&quot;</p>
+<pre><code class="lang-javascript"> <span class="hljs-string">&quot;aaaaa&quot;</span>.match(<span class="hljs-regexp">/a+?/</span>);  <span class="hljs-comment">// Devuelve [&quot;aaaaa&quot;]</span>
+</code></pre>
+<p>El comportamiento inicial se conoce como &quot;greedy&quot; o codicioso, en el que el patr&#xF3;n intenta coger la mayor parte de la cadena de texto posible. En segundo comportamiento se conoce como &quot;nongreedy&quot; o no codicioso, en el que el patr&#xF3;n coge lo menos posible de la cadena.</p>
+<h1 id="extraer-partes-de-la-cadena">Extraer partes de la cadena</h1>
+<p>A veces nos intersa no s&#xF3;lo saber si una cadena cumple un determinado patr&#xF3;n, sino extraer determinadas partes de &#xE9;l. Por ejemplo, si una fecha est&#xE1; en el formato &quot;27/11/2012&quot; puede interesarnos extraer los n&#xFA;meros. Una expresi&#xF3;n regular que vale para esta cadena puede ser</p>
+<pre><code class="lang-javascript">/\d{<span class="hljs-number">1</span>,<span class="hljs-number">2</span>}\/\d{<span class="hljs-number">1</span>,<span class="hljs-number">2</span>}\/\d{<span class="hljs-number">4</span>}/
+</code></pre>
+<p>Suponiendo que el d&#xED;a y el mes puedan tener una cifra y que el a&#xF1;o sea obligatoriamente de 4 cifras. En este caso:</p>
+<pre><code class="lang-javascript"> <span class="hljs-string">&quot;27/11/2012&quot;</span>.match(<span class="hljs-regexp">/\d{1,2}\/\d{1,2}\/\d{4}/</span>);
+</code></pre>
+<p> nos devuelve un array con un &#xFA;nico elemento que es la cadena &quot;27/11/2012&quot;. Para extraer los trozos, &#xFA;nicamente debemos poner entre par&#xE9;ntesis en la expresi&#xF3;n regular aquellas partes que nos interesan. Es decir:</p>
+<pre><code> /(\d{1,2})\/(\d{1,2})\/(\d{4})/
+</code></pre><p> Si ahora ejecutamos el m&#xE9;todo match() con la misma cadena anterior, obtendremos un array de 4 cadenas. La primera es la cadena completa que cumple la expresi&#xF3;n regular. Los otros tres elementos son lo que cumple cada uno de los par&#xE9;ntesis:</p>
+<pre><code> &quot;27/11/2012&quot;.match(/(\d{1,2})\/(\d{1,2})\/(\d{4})/);  // Devuelve el array
+ [&quot;27/11/2012&quot;, &quot;27&quot;, &quot;11&quot;, &quot;2012&quot;]
+</code></pre><p>  Los par&#xE9;ntesis tambi&#xE9;n nos sirven para agrupan un trozo y poner detr&#xE1;s uno de los s&#xED;mbolos de cantidades. Por ejemplo:</p>
+<pre><code class="lang-javascript">  <span class="hljs-string">&quot;xyxyxyxy&quot;</span>.match(<span class="hljs-regexp">/(xy)+/</span>);   <span class="hljs-comment">// Se cumple, hay xy una o m&#xE1;s veces.</span>
+</code></pre>
+<h2 id="usar-lo-encontrado-en-la-expresi&#xF3;n">Usar lo encontrado en la expresi&#xF3;n</h2>
+<p>   Las partes de la cadena que cumplen la parte de expresi&#xF3;n regular entre par&#xE9;ntesis, se pueden reutilizar en la misma expresi&#xF3;n regular. Estas partes encontradas se van almacenando en \1, \2, \3... y podemos usarlas. Este posibilidad es realmente interesante si queremos por ejemplo, verificar que una cadena de texto va cerrada entre comillas del mismo tipo, es decir, queremos buscar algo como &apos;esto&apos; o &quot;esto&quot;, pero no nos vale &apos;esto&quot;.
+La expresi&#xF3;n regular para buscar una cadena entre este tipo de comillas puede ser /([&apos;&quot;]).*\1/ es decir, buscamos una &apos; o una &quot; con [&apos;&quot;]. Hacemos que lo que se encuentre se guarde meti&#xE9;ndolo entre par&#xE9;ntesis ([&apos;&quot;]) y a partir de ah&#xED; nos vale cualquier conjunto de caracteres terminados en \1, que es lo que hab&#xED;amos encontrado al principio.</p>
+<pre><code class="lang-javascript"><span class="hljs-string">&quot;&apos;hola tu&apos; turur&#xFA;&quot;</span>.match(<span class="hljs-regexp">/([&quot;&apos;]).*\1/</span>); <span class="hljs-comment">// Devuelve [&quot;&apos;hola tu&apos;&quot;, &quot;&apos;&quot;]</span>
+<span class="hljs-string">&quot;\&quot;hola tu&apos; turur&#xFA;&quot;</span>.match(<span class="hljs-regexp">/([&quot;&apos;]).*\1/</span>); <span class="hljs-comment">// Devuelve null, la cadena comienza con &quot; y termina en &apos;</span>
+</code></pre>
+<h2 id="ignorar-lo-encontrado">Ignorar lo encontrado</h2>
+<p> A veces nos interesa encontrar una secuencia que se repita varias veces seguidas y la forma de hacerlo es con los par&#xE9;ntesis, por ejemplo, si ponemos /(pa){2}/ estamos buscando &quot;papa&quot;. Para evitar que esos par&#xE9;ntesis guarden lo encontrado en \1, podemos poner ?:, tal que as&#xED; /(?:pa){2}/, de esta forma encontraremos &quot;papa&quot;, pero se nos devolver&#xE1; el trozo &quot;pa&quot; encontrado ni lo tendremos disponible en \1. Compara las dos siguientes:</p>
+<pre><code class="lang-javascript"> <span class="hljs-string">&quot;papa&quot;</span>.match(<span class="hljs-regexp">/(pa){2}/</span>);    <span class="hljs-comment">// Devuelve [&quot;papa&quot;, &quot;pa&quot;]</span>
+ <span class="hljs-string">&quot;papa&quot;</span>.match(<span class="hljs-regexp">/(?:pa){2}/</span>);  <span class="hljs-comment">// Devuelve [&quot;papa&quot;]</span>
+</code></pre>
+<h2 id="posici&#xF3;n-de-la-expresi&#xF3;n">Posici&#xF3;n de la expresi&#xF3;n</h2>
+<p>A veces nos interesa que la cadena busque en determinadas posiciones. Las expresiones regulares nos ofrecen algunos caracteres espaciales para esto.
+^ indica el principo de cadena, por ejemplo, /^hola/ vale si la cadena &quot;hola&quot; est&#xE1; al principio</p>
+<pre><code class="lang-javascript"> <span class="hljs-string">&quot;hola tu&quot;</span>.match(<span class="hljs-regexp">/^hola/</span>);       <span class="hljs-comment">// Devuelve [&quot;hola&quot;]</span>
+ <span class="hljs-string">&quot;pues hola tu&quot;</span>.match(<span class="hljs-regexp">/^hola/</span>);  <span class="hljs-comment">// Devuelve null</span>
+</code></pre>
+<p>$ es el final de la cadena, por ejemplo /tu$/ vale si la cadena termina en &quot;tu&quot;</p>
+<pre><code class="lang-javascript"> <span class="hljs-string">&quot;hola tu&quot;</span>.match(<span class="hljs-regexp">/tu$/</span>);         <span class="hljs-comment">// Devuelve [&quot;tu&quot;]</span>
+ <span class="hljs-string">&quot;hola tu turur&#xFA;&quot;</span>.match(<span class="hljs-regexp">/tu$/</span>);  <span class="hljs-comment">// Devuelve null</span>
+</code></pre>
+<p>\b indica una frontera de palabra, es decir, entre un caracter &quot;letra&quot; y cualquier otra cosa como espacios, fin o principio de linea, etc. De esta forma, por ejemplo, /\bjava\b/ buscar&#xE1; la palabra java, pero ignorar&#xE1; javascript</p>
+<pre><code class="lang-javascript"> <span class="hljs-string">&quot;java es g&#xFC;ay&quot;</span>.match(<span class="hljs-regexp">/\bjava\b/</span>);          <span class="hljs-comment">// Devuelve [&quot;java&quot;]</span>
+ <span class="hljs-string">&quot;javascript es g&#xFC;ay&quot;</span>.match(<span class="hljs-regexp">/\bjava\b/</span>);    <span class="hljs-comment">// Devuelve null</span>
+</code></pre>
+<p>\B es lo contrario de \b, as&#xED; por ejemplo, /\bjava\B/ buscar&#xE1; una palabra que empiece por &quot;java&quot;, pero no sea s&#xF3;lo java sino que tenga algo m&#xE1;s</p>
+<pre><code class="lang-javascript"> <span class="hljs-string">&quot;java es g&#xFC;ay&quot;</span>.match(<span class="hljs-regexp">/\bjava\B/</span>);       <span class="hljs-comment">// Devuelve null</span>
+ <span class="hljs-string">&quot;javascript es g&#xFC;ay&quot;</span>.match(<span class="hljs-regexp">/\bjava\B/</span>); <span class="hljs-comment">// Devuelve [&quot;java&quot;]</span>
+</code></pre>
+<p>(?=expresion) sirve para posicionar el resto de la expresi&#xF3;n regular y buscar antes o depu&#xE9;s. Por ejemplo si queremos buscar un n&#xFA;mero que vaya delante de km, podemos hacer esto /\d+(?= km)/ , es decir, uno o m&#xE1;s d&#xED;gitos seguidos de un espacio y las letras km. La diferencia con esta expresi&#xF3;n (/\d+ km/) es que en el primer caso s&#xF3;lo casan con la expresi&#xF3;n los n&#xFA;meros, mientras que en el segundo caso se incluye tambi&#xE9;n el &quot; km&quot;</p>
+<pre><code class="lang-javascript"> <span class="hljs-string">&quot;11 millas 10 km&quot;</span>.match(<span class="hljs-regexp">/\d+(?= km)/</span>);   <span class="hljs-comment">// Devuelve [&quot;10&quot;]</span>
+ <span class="hljs-string">&quot;11 millas 10 km&quot;</span>.match(<span class="hljs-regexp">/\d+ km/</span>);       <span class="hljs-comment">// Devuelve [&quot;10 km&quot;]</span>
+</code></pre>
+<p>Hay que tener cuidado si buscamos detr&#xE1;s, porque como el trozo (?=expresion) no se tiene en cuenta, sigue contando para el resto de la expresi&#xF3;n. Por ejemplo, si queremos extraer la parte decimal de &quot;11.22&quot; podr&#xED;amos pensar en hacer esto /(?=.)\d+/ , pero no funciona porque el . decimal no se &quot;consume&quot; con (?=.), as&#xED; que debemos tenerlo en cuenta y ponerlo detr&#xE1;s, as&#xED; /(?=.).\d+/</p>
+<pre><code class="lang-javascript"> <span class="hljs-string">&quot;11.22&quot;</span>.match(<span class="hljs-regexp">/(?=\.)\d+/</span>); <span class="hljs-comment">// Devuelve null</span>
+ <span class="hljs-string">&quot;11.22&quot;</span>.match(<span class="hljs-regexp">/(?=\.)\.\d+/</span>); <span class="hljs-comment">// Devuelve [&quot;.22&quot;]</span>
+</code></pre>
+<p>(?!expresion) hace lo contrario que (?=expresion), es decir, busca una posici&#xF3;n donde no se cumpla expresi&#xF3;n. Por ejemplo, para sacar lo que no sean km de &quot;11 km, 12 km, 14 m&quot; podemos poner /\d{2}(?! km)/</p>
+<pre><code class="lang-javascript"> <span class="hljs-string">&quot;11 km 12 km 14 m&quot;</span>.match(<span class="hljs-regexp">/\d{2}(?! km)/</span>); <span class="hljs-comment">// Devuelve [&quot;14&quot;]</span>
+</code></pre>
+<h2 id="flags-de-opciones">Flags de opciones</h2>
+<p>Hemos visto que una expresi&#xF3;n regular es /expresion/. Podemos poner algunos flags detr&#xE1;s, b&#xE1;sicamente unas letras que cambian algo el comportamiento i es para ignorar may&#xFA;sculas y min&#xFA;sculas.</p>
+<pre><code class="lang-javascript"><span class="hljs-string">&quot;hola&quot;</span>.match(<span class="hljs-regexp">/HOLA/</span>);  <span class="hljs-comment">// Devuelve null</span>
+<span class="hljs-string">&quot;hola&quot;</span>.match(<span class="hljs-regexp">/HOLA/i</span>);  <span class="hljs-comment">// Devuelve [&quot;hola&quot;]</span>
+</code></pre>
+<p> g es para buscar todas las veces posibles la expresi&#xF3;n, no s&#xF3;lo una vez</p>
+<pre><code class="lang-javascript"> <span class="hljs-string">&quot;11 223 44 66 77&quot;</span>.match(<span class="hljs-regexp">/\d+/</span>);   <span class="hljs-comment">// Devuelve [&quot;11&quot;]</span>
+ <span class="hljs-string">&quot;11 223 44 66 77&quot;</span>.match(<span class="hljs-regexp">/\d+/g</span>);  <span class="hljs-comment">// Devuelve [&quot;11&quot;, &quot;223&quot;, &quot;44&quot;, &quot;66&quot;, &quot;77&quot;]</span>
+</code></pre>
+<p> m busca en cadenas con retornos de carro \n considerando estos como inicios de linea ^ o fin $</p>
+<pre><code class="lang-javascript"> <span class="hljs-string">&quot;hola\ntu&quot;</span>.match(<span class="hljs-regexp">/^tu/</span>);   <span class="hljs-comment">// Devuelve null</span>
+ <span class="hljs-string">&quot;hola\ntu&quot;</span>.match(<span class="hljs-regexp">/^tu/m</span>);  <span class="hljs-comment">// Devuelve [&quot;tu&quot;]</span>
+ <span class="hljs-string">&quot;hola\ntu&quot;</span>.match(<span class="hljs-regexp">/hola$/</span>);  <span class="hljs-comment">// Devuelve null</span>
+ <span class="hljs-string">&quot;hola\ntu&quot;</span>.match(<span class="hljs-regexp">/hola$/m</span>);  <span class="hljs-comment">// Devuelve [&quot;hola&quot;]</span>
+</code></pre>
+<h2 id="otros-m&#xE9;todos-de-cadena-y-de-expresi&#xF3;n-regular">Otros m&#xE9;todos de cadena y de expresi&#xF3;n regular</h2>
+<p> Para todos estos ejemplos hemos usado el m&#xE9;todo match() de la clase String, ya que nos devuelve un array con las cosas que se encuentran y viendo los resultados es la forma m&#xE1;s clara de ver c&#xF3;mo funcionan las distintas partes de la expresi&#xF3;n regular. Sin embargo, tanto String como RegExp tienen otros m&#xE9;todos &#xFA;tiles</p>
+<p> <strong>String.search(/expresion/)</strong>
+ Devuelve la posici&#xF3;n donde se encuentra esa expresi&#xF3;n dentro de la cadena, o -1 si no se encuentra.</p>
+<p><strong>String.replace(/expresion/,cadena)</strong>
+Busca el trozo de cadena que casa con la expresi&#xF3;n y la reemplaza con lo que le pasemos en el par&#xE1;metro cadena. Este m&#xE9;todo tiene adem&#xE1;s un detalle intresante. Cuando en la expresi&#xF3;n regular tenemos par&#xE9;ntesis para extraer algunas partes de la cadena, la misma expresi&#xF3;n regular recuerda qu&#xE9; ha encontrado. En el m&#xE9;todo replace, si en la cadena de segundo par&#xE1;metro aparecen cosas como $1, $2, utilizar&#xE1; lo encontrado.</p>
+<pre><code class="lang-javascript"><span class="hljs-string">&quot;ho3la&quot;</span>.replace(<span class="hljs-regexp">/\d/</span>,<span class="hljs-string">&quot;X&quot;</span>); <span class="hljs-comment">// Devuelve &quot;hoXla&quot;</span>
+<span class="hljs-string">&quot;ho3la&quot;</span>.replace(<span class="hljs-regexp">/(\d)/</span>,<span class="hljs-string">&quot;-$1-&quot;</span>); <span class="hljs-comment">// Devuelve &quot;ho-3-la&quot;</span>
+</code></pre>
+<p><strong>String.match(/expresion/)</strong>
+Ya lo hemos visto.</p>
+<p><strong>String.split(/expresion/)</strong>
+Usa lo que sea que case con la expresi&#xF3;n como separador y devuelve un array con la cadena partida en trozos por ese separador</p>
+<pre><code class="lang-javascript"><span class="hljs-string">&quot;hola, dos tres; cuatro&quot;</span>.split(<span class="hljs-regexp">/\W+/</span>); <span class="hljs-comment">// Devuelve [&quot;hola&quot;, &quot;dos&quot;, &quot;tres&quot;, &quot;cuatro&quot;]</span>
+</code></pre>
+<h2 id="regexp-constructor">RegExp constructor</h2>
+<p>Adem&#xE1;s de crear las expresiones regulares con /expresion/flags, podemos hacerlo con un new de la clase RegExp, por ejemplo new RegExp(&quot;expresion&quot;,&quot;flags&quot;).</p>
+<pre><code class="lang-javascript"> <span class="hljs-keyword">var</span> reg = <span class="hljs-keyword">new</span> <span class="hljs-built_in">RegExp</span>(<span class="hljs-string">&quot;\\d+&quot;</span>,<span class="hljs-string">&quot;g&quot;</span>);
+ <span class="hljs-string">&quot;11 22 33&quot;</span>.match(reg);  <span class="hljs-comment">// Devuelve [&quot;11&quot;,&quot;22&quot;,&quot;33&quot;]</span>
+</code></pre>
+<p> Hay que fijarse en este caso que las \ debemos escaparlas, con \\</p>
+<h2 id="regexpexec">RegExp.exec()</h2>
+<p>Es similar a match() de String, pero s&#xF3;lo devuelve un resultado y hace que RegExp guarde la posici&#xF3;n en la que lo ha encontrado. Sucesivas llamadas a exec(), nos iran devolviendo los siguientes resultados</p>
+<pre><code class="lang-javascript"> <span class="hljs-keyword">var</span> reg = <span class="hljs-keyword">new</span> <span class="hljs-built_in">RegExp</span>(<span class="hljs-string">&quot;\\d+&quot;</span>);
+ reg.exec(<span class="hljs-string">&quot;11 22 33&quot;</span>);    <span class="hljs-comment">// Devuelve [&quot;11&quot;]</span>
+ reg.exec(<span class="hljs-string">&quot;11 22 33&quot;</span>);    <span class="hljs-comment">// Vuelve a devolver [&quot;11&quot;], puesto que no hay flag g</span>
+
+ <span class="hljs-keyword">var</span> reg = <span class="hljs-keyword">new</span> <span class="hljs-built_in">RegExp</span>(<span class="hljs-string">&quot;\\d+&quot;</span>,<span class="hljs-string">&quot;g&quot;</span>);
+ reg.exec(<span class="hljs-string">&quot;11 22 33&quot;</span>);    <span class="hljs-comment">// Devuelve [&quot;11&quot;]</span>
+<span class="hljs-built_in">RegExp</span>.exec()
+Es similar a match() de <span class="hljs-built_in">String</span>, pero s&#xF3;lo devuelve un resultado y hace que <span class="hljs-built_in">RegExp</span> guarde la posici&#xF3;n en la que lo ha encontrado. Sucesivas llamadas a exec(), nos iran devolviendo los siguientes resultados
+ <span class="hljs-keyword">var</span> reg = <span class="hljs-keyword">new</span> <span class="hljs-built_in">RegExp</span>(<span class="hljs-string">&quot;\\d+&quot;</span>);
+ reg.exec(<span class="hljs-string">&quot;11 22 33&quot;</span>);    <span class="hljs-comment">// Devuelve [&quot;11&quot;]</span>
+ reg.exec(<span class="hljs-string">&quot;11 22 33&quot;</span>);    <span class="hljs-comment">// Vuelve a devolver [&quot;11&quot;], puesto que no hay flag g</span>
+
+ <span class="hljs-keyword">var</span> reg = <span class="hljs-keyword">new</span> <span class="hljs-built_in">RegExp</span>(<span class="hljs-string">&quot;\\d+&quot;</span>,<span class="hljs-string">&quot;g&quot;</span>);
+ reg.exec(<span class="hljs-string">&quot;11 22 33&quot;</span>);    <span class="hljs-comment">// Devuelve [&quot;11&quot;]</span>
+ reg.exec(<span class="hljs-string">&quot;11 22 33&quot;</span>);    <span class="hljs-comment">// Vuelve a devolver [&quot;22&quot;], puesto que si hay flag g</span>
+ reg.exec(<span class="hljs-string">&quot;11 22 33&quot;</span>);    <span class="hljs-comment">// Vuelve a devolver [&quot;33&quot;], puesto que si hay flag g</span>
+ reg.exec(<span class="hljs-string">&quot;11 22 33&quot;</span>);    <span class="hljs-comment">// Devuelve null, ya no hay m&#xE1;s resutlados. </span>
+ reg.exec(<span class="hljs-string">&quot;11 22 33&quot;</span>);    <span class="hljs-comment">// Vuelve a devolver [&quot;11&quot;], despues de devolver null la RegExp se &quot;reinicializa&quot;</span>
+<span class="hljs-built_in">RegExp</span>.test()
+Similar a exec(), pero en vez de devolver lo encontrado, devuelve <span class="hljs-literal">true</span> si ha encontrado algo o <span class="hljs-literal">false</span> si no. Como la expresi&#xF3;n regular recuerda las b&#xFA;squedas anteriores, sucesivas llamadas a test() pueden devolver resultados distintos
+ <span class="hljs-keyword">var</span> reg = <span class="hljs-keyword">new</span> <span class="hljs-built_in">RegExp</span>(<span class="hljs-string">&quot;\\d+&quot;</span>,<span class="hljs-string">&quot;g&quot;</span>);
+ reg.test(<span class="hljs-string">&quot;11 22 33&quot;</span>);    <span class="hljs-comment">// Devuelve true, porque encuentra el [&quot;11&quot;]</span>
+ reg.test(<span class="hljs-string">&quot;11 22 33&quot;</span>);    <span class="hljs-comment">// Vuelve a devolver true, porque encuentra el [&quot;22&quot;], puesto que si hay flag g</span>
+ reg.test(<span class="hljs-string">&quot;11 22 33&quot;</span>);    <span class="hljs-comment">// Vuelve a devolver true, porque encuentra el [&quot;33&quot;], puesto que si hay flag g</span>
+ reg.test(<span class="hljs-string">&quot;11 22 33&quot;</span>);    <span class="hljs-comment">// Devuelve false, ya no hay m&#xE1;s resutlados. </span>
+ reg.test(<span class="hljs-string">&quot;11 22 33&quot;</span>);    <span class="hljs-comment">// Vuelve a devolver true, porque vuelve a encontrar el [&quot;11&quot;], despues de devolver null la RegExp se &quot;reinicializa&quot; reg.exec(&quot;11 22 33&quot;);    // Vuelve a devolver [&quot;22&quot;], puesto que si hay flag g</span>
+ reg.exec(<span class="hljs-string">&quot;11 22 33&quot;</span>);    <span class="hljs-comment">// Vuelve a devolver [&quot;33&quot;], puesto que si hay flag g</span>
+ reg.exec(<span class="hljs-string">&quot;11 22 33&quot;</span>);    <span class="hljs-comment">// Devuelve null, ya no hay m&#xE1;s resutlados. </span>
+ reg.exec(<span class="hljs-string">&quot;11 22 33&quot;</span>);    <span class="hljs-comment">// Vuelve a devolver [&quot;11&quot;], despues de devolver null la RegExp se &quot;reinicializa&quot;</span>
+</code></pre>
+<h2 id="regexptest">RegExp.test()</h2>
+<p>Similar a exec(), pero en vez de devolver lo encontrado, devuelve true si ha encontrado algo o false si no. Como la expresi&#xF3;n regular recuerda las b&#xFA;squedas anteriores, sucesivas llamadas a test() pueden devolver resultados distintos</p>
+<pre><code class="lang-javascript"> <span class="hljs-keyword">var</span> reg = <span class="hljs-keyword">new</span> <span class="hljs-built_in">RegExp</span>(<span class="hljs-string">&quot;\\d+&quot;</span>,<span class="hljs-string">&quot;g&quot;</span>);
+ reg.test(<span class="hljs-string">&quot;11 22 33&quot;</span>);    <span class="hljs-comment">// Devuelve true, porque encuentra el [&quot;11&quot;]</span>
+ reg.test(<span class="hljs-string">&quot;11 22 33&quot;</span>);    <span class="hljs-comment">// Vuelve a devolver true, porque encuentra el [&quot;22&quot;], puesto que si hay flag g</span>
+ reg.test(<span class="hljs-string">&quot;11 22 33&quot;</span>);    <span class="hljs-comment">// Vuelve a devolver true, porque encuentra el [&quot;33&quot;], puesto que si hay flag g</span>
+ reg.test(<span class="hljs-string">&quot;11 22 33&quot;</span>);    <span class="hljs-comment">// Devuelve false, ya no hay m&#xE1;s resutlados. </span>
+ reg.test(<span class="hljs-string">&quot;11 22 33&quot;</span>);    <span class="hljs-comment">// Vuelve a devolver true, porque vuelve a encontrar el [&quot;11&quot;], despues de devolver null la RegExp se &quot;reinicializa&quot;</span>
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../chapter11/sessions.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Sessions en ExpressJS">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Expresiones Regulares","level":"1.12","depth":1,"previous":{"title":"Sessions en ExpressJS","level":"1.11.8","depth":2,"path":"chapter11/sessions.md","ref":"chapter11/sessions.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter12/Regex.md","mtime":"2017-03-31T00:27:08.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-31T00:44:37.826Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
