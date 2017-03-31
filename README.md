@@ -7,7 +7,7 @@
 - [github](https://github.com/ULL-ESIT-PL-1617/analizador-lexico-para-un-subconjunto-de-javascript-airam-jorge-kevin)
 - [gh-pages](https://ull-esit-pl-1617.github.io/analizador-lexico-para-un-subconjunto-de-javascript-airam-jorge-kevin/)
 - [gitbook.com](https://airamnavas.gitbooks.io/apuntes-y-expresiones-regulares/content/)
-- [Descripción de la práctica](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/practicas/practicaanalisislexicotdop.html#recursos)
+- [Descripción de la práctica](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/practicas/practicaanalisislexicotdop.html)
 
 
 #### Enlaces a las máquinas del iaas
