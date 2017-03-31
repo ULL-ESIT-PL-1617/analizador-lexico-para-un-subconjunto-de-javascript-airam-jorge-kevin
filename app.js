@@ -1,5 +1,6 @@
 //authsession.js
 "use strict";
+var config = require('./package.json');
 let express = require('express'),
     app = express(),
     session = require('express-session');
@@ -11,6 +12,8 @@ let bcrypt = require("bcrypt-nodejs");
 let users = {
   Mickey : bcrypt.hashSync("Mouse")
 };
+
+app.set('port', (process.env.PORT || config.appPort || 80));
 
 let instructions = `
 Please log in:

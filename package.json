@@ -22,6 +22,7 @@
     "lexico",
     "javascript"
   ],
+  "appPort": 8083,
   "author": "Kevin Diaz Marrero, Airam Navas Simón, Jorge Sierra Acosta\"",
   "license": "ISC",
   "bugs": {
